@@ -91,33 +91,32 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            ТВОРЧЕСКИЕ
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный
+            <SparklesIcon className="me-1 size-3" /> Популярное направление
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Пройти тест
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              Дизайн
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Графический дизайнер, UX/UI, иллюстратор",
+              "Для тех, кто мыслит образами и формами",
+              "Развитое чувство стиля и эстетики",
+              "Профессии с высоким спросом на рынке",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,50 +128,53 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
-        features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
-        ]}
-        className="lg:col-span-3"
-        cta="Начать"
-      />
-
-      <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
-        features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
-        ]}
-        className="lg:col-span-4"
-      />
-
-      <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
-        className="lg:col-span-4"
-      />
-
-      <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
-        priceLabel="По запросу"
+        titleBadge="АНАЛИТИЧЕСКИЕ"
+        priceLabel="Данные"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Аналитик данных, финансист, исследователь",
+          "Для любителей цифр и закономерностей",
+          "Работа с логикой и структурами",
+          "Высокооплачиваемые IT-профессии",
+        ]}
+        className="lg:col-span-3"
+        cta="Пройти тест"
+      />
+
+      <PricingCard
+        titleBadge="ПОМОГАЮЩИЕ"
+        priceLabel="Люди"
+        priceSuffix=""
+        features={[
+          "Психолог, педагог, врач, коуч",
+          "Для тех, кто черпает энергию из помощи другим",
+          "Высокая эмпатия и коммуникативность",
+        ]}
+        className="lg:col-span-4"
+        cta="Пройти тест"
+      />
+
+      <PricingCard
+        titleBadge="ТЕХНИЧЕСКИЕ"
+        priceLabel="Код"
+        priceSuffix=""
+        features={["Разработчик, инженер, архитектор ПО", "Для системного мышления и решения задач", "Востребованность во всём мире"]}
+        className="lg:col-span-4"
+        cta="Пройти тест"
+      />
+
+      <PricingCard
+        titleBadge="НЕ ЗНАЕШЬ С ЧЕГО НАЧАТЬ?"
+        priceLabel="Пройди тест"
+        priceSuffix=""
+        features={[
+          "Ответь на 20 вопросов анонимно",
+          "Получи персональный разбор твоих сильных сторон",
+          "Советы: как войти в профессию с нуля",
+          "Цитаты великих людей по твоему типу личности",
         ]}
         className="lg:col-span-8"
-        cta="Связаться"
+        cta="Начать сейчас"
       />
     </div>
   )
